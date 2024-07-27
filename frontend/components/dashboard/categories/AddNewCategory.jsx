@@ -83,5 +83,3 @@ const AddNewCategory = ({ handleCloseClick, refreshAction }) => {
 };
 
 export default AddNewCategory;
-
-export default AddNewCategory
