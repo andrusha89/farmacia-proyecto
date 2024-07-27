@@ -7,10 +7,11 @@ const Search = ({placeholder,buttonHandler, triggerOnBlankField}) => {
   const [value, setValue] = useState('')
   const myPressEnterRef = useRef(null)
 
-  useEffect(() => {
-    if (value === ""){
-      triggerOnBlankField?triggerOnBlankField():'';
-    }
+   useEffect(() => {
+    if (value === "") {
+      if (activateIfEmpty) {
+        activateIfEmpty();
+      }
     return () => {
     }
   }, [value])
